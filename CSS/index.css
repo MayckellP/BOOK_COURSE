@@ -12,7 +12,15 @@
 }
 #navbarNavDropdown {
   justify-content: end;
-  margin-right: 2rem;
+  margin-right: 4rem;
+}
+.lineas {
+  width: 90%;
+  margin: auto;
+}
+#navbarNavDropdown img {
+  width: 25px;
+  float: right;
 }
 
 /**----------------------------------------------MAIN*/
@@ -300,7 +308,53 @@
 }
 
 /*?----------------------------------------------MEDIA QUERIES 600 PX*/
-@media (max-width: 600px) {
+@media (max-width: 1500px) {
+  .nav {
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  /**------------------------------------------MAIN*/
+  /*!--------------------------CONTAINER TITLE*/
+  .cont-text h1 {
+    font-size: 50px;
+  }
+  .cont-text h2 {
+    font-size: 20px;
+  }
+
+  /**-------------------------------------INFO SECTION*/
+  /*!-------------------------LOGO*/
+  .logo-info {
+    width: 50%;
+  }
+  /*!-------------------------TEXTO*/
+  .parrafo {
+    width: 50%;
+  }
+  .parrafo p {
+    font-size: 15px;
+  }
+
+  /**-----------------------------------SECTION COURSES TYPE*/
+  .courses h3 {
+    font-size: 23px;
+  }
+
+  /**-----------------------------------SECTION SUSCRIPTION*/
+  .cont-adresse form {
+    width: 60%;
+  }
+  .cont-adresse input {
+    width: 88%;
+  }
+  .cont-adresse button {
+    width: 12%;
+  }
+}
+
+/*?----------------------------------------------MEDIA QUERIES 600 PX*/
+@media (max-width: 800px) {
   .nav {
     padding-left: 1rem;
     padding-bottom: 1rem;
