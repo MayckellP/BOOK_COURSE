@@ -10,17 +10,9 @@
   width: 100px;
   margin-left: 10px;
 }
-.subNav {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.subNav ul {
-  margin: auto;
-}
-.subNav ul li {
-  margin-right: 20px;
+#navbarNavDropdown {
+  justify-content: end;
+  margin-right: 2rem;
 }
 
 /**----------------------------------------------MAIN*/
@@ -296,6 +288,7 @@
   width: 40%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
 }
 .legal {
@@ -304,4 +297,131 @@
 }
 .terms {
   padding-left: 1rem;
+}
+
+/*?----------------------------------------------MEDIA QUERIES 600 PX*/
+@media (max-width: 600px) {
+  .nav {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+  #logo {
+    width: 10%;
+  }
+
+  /**------------------------------------------MAIN*/
+  /*!--------------------------CONTAINER TITLE*/
+  .cont-main {
+    flex-direction: column-reverse;
+  }
+  .cont-text {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+  .cont-text h1 {
+    margin-top: 1rem;
+    font-size: 40px;
+  }
+  .cont-text h2 {
+    font-size: 15px;
+  }
+
+  /*!--------------------------CONTAINER CAROUSEL*/
+  .cont-carousel {
+    width: 100%;
+  }
+  .bg-gradient {
+    height: 200px;
+  }
+
+  /**-------------------------------------INFO SECTION*/
+  .info-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*!-------------------------LOGO*/
+  .logo-info {
+    width: 100%;
+    border: none;
+    padding: 0;
+    text-align: center;
+  }
+  /*!-------------------------TEXTO*/
+  .parrafo {
+    width: 100%;
+  }
+  .parrafo p {
+    font-size: 15px;
+  }
+
+  /**-----------------------------------SECTION COURSES TYPE*/
+  .courses {
+    padding: 2rem;
+  }
+  .courses-card {
+    flex-direction: column;
+    padding: 0rem;
+  }
+
+  /*!---------------------COURSE ONLINE*/
+  .online {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  /*!---------------------COURSE CLASSROOM*/
+  .classroom {
+    width: 100%;
+  }
+  .courses h3 {
+    font-size: 25px;
+  }
+  .tl-courses {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid rgb(143, 142, 142);
+    margin-bottom: 1rem;
+  }
+
+  /**-----------------------------------SECTION FORO*/
+
+  .foro h2 {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid rgb(143, 142, 142);
+  }
+
+  /**-----------------------------------SECTION SUSCRIPTION*/
+  .suscription h3 {
+    font-size: 35px;
+  }
+  .cont-adresse form {
+    width: 100%;
+  }
+  .cont-adresse input {
+    width: 85%;
+  }
+  .cont-adresse button {
+    width: 15%;
+  }
+
+  /**-----------------------------------FOOTER*/
+  .cont-footer {
+    padding-bottom: 1rem;
+  }
+  .social-media img {
+    width: 40px;
+  }
+  .footer-logo {
+    width: 100%;
+  }
+  .footer-logo p {
+    font-size: 15px;
+  }
+  .footer-info {
+    width: 100%;
+  }
 }
