@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css
+    "
+    />
+    <link rel="stylesheet" href="../CSS/course_formular.css" />
+    <link
+      rel="shortcut icon"
+      href="Media/Images/logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="../Media/Images/logo.png"
+      type="image/x-icon"
+    />
+    <title>ZH-ACADEMIY | Course</title>
+  </head>
+  <body>
+    <!--*--------------------------------------------------------------NAVBAR-->
+    <div class="p-0 fixed-top">
+      <nav class="navbar navbar-expand-lg bg-light container-fluid p-0">
+        <div class="nav container-fluid">
+          <a class="navbar-brand" href="../index.html" id="logo">
+            <img src="../Media/Images/Logo.png" alt="" class="logo" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ContactPage.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="AboutPage.html">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Courses
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="Course_Formular.html"
+                      >Englisch
+                      <img
+                        src="../Media/Icons/vereinigtes-konigreich.png"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <hr class="lineas" />
+                  <li>
+                    <a class="dropdown-item" href="Course_Formular.html"
+                      >Spanisch <img src="../Media/Icons/spanien.png"
+                    /></a>
+                  </li>
+                  <hr class="lineas" />
+                  <li>
+                    <a class="dropdown-item" href="Course_Formular.html"
+                      >Deutsch
+                      <img src="../Media/Icons/deutsche-flagge.png" alt="" />
+                    </a>
+                  </li>
+                  <hr class="lineas" />
+                  <li>
+                    <a class="dropdown-item" href="Course_Formular.html"
+                      >Italienisch
+                      <img src="../Media/Icons/italy.png" alt="" />
+                    </a>
+                  </li>
+                  <hr class="lineas" />
+                  <li>
+                    <a class="dropdown-item" href="Course_Formular.html"
+                      >Französisch
+                      <img src="../Media/Icons/frankreich.png" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Account
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="LoginPage.html"
+                      >Login
+                      <img src="../Media/Icons/tur.png" alt="" />
+                    </a>
+                  </li>
+                  <hr class="lineas" />
+                  <li>
+                    <a class="dropdown-item" href="RegisterPage.html"
+                      >Sign up
+                      <img src="../Media/Icons/register.png" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <div class="notify">
+                  <div id="count">
+                    <p id="nummer">0</p>
+                  </div>
+                  <a class="nav-link" href="ReservationPage.html">
+                    <img src="../Media/Icons/aprender-en-linea.png" alt="" />
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--*------------------------------------------------------START MAIN-->
+    <main class="main">
+      <h2>ONLINE-ANMELDUNG</h2>
+      <div class="cont-main">
+        <div class="cont-form">
+          <form action="" id="form">
+            <table class="tbl-form">
+              <!--!-----NAME-->
+              <tr>
+                <td class="camp-name">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control border-dark"
+                      id="name"
+                      placeholder="Name"
+                      required
+                    />
+                    <label for="floatingInput">Vorname</label>
+                  </div>
+                </td>
+                <td class="camp-lastName">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control border-dark"
+                      id="lastName"
+                      placeholder="Lastname"
+                      required
+                    />
+                    <label for="floatingInput">Nachname</label>
+                  </div>
+                </td>
+              </tr>
+              <!--!-----MAIL-->
+              <tr>
+                <td class="camp-gen">
+                  <div class="gen-box">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="gen"
+                        id="man"
+                        required
+                      />
+                      <label class="form-check-label" for="man">
+                        <img
+                          src="../Media/Icons/man.png"
+                          alt="man"
+                          class="img"
+                        />
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="gen"
+                        id="woman"
+                        required
+                      />
+                      <label class="form-check-label" for="woman">
+                        <img
+                          src="../Media/Icons/women.png"
+                          alt="man"
+                          class="img"
+                        />
+                      </label>
+                    </div>
+                  </div>
+                </td>
+                <td class="camp-mail">
+                  <div class="form-floating">
+                    <input
+                      type="mail"
+                      class="form-control border-dark"
+                      id="mail"
+                      placeholder="E-Mail"
+                      required
+                    />
+                    <label for="floatingInput">E-mail</label>
+                  </div>
+                </td>
+              </tr>
+              <!--!-----GEBURSTAG-->
+              <tr>
+                <td class="camp-geburtstag">
+                  <div class="cont-select h-100">
+                    <label for="level"
+                      ><img
+                        class="img me-2"
+                        src="../Media/Icons/geburtstag.png"
+                        alt=""
+                    /></label>
+                    <input
+                      type="date"
+                      id="date"
+                      class="geburtstag"
+                      placeholder="Geburtstag"
+                      required
+                    />
+                  </div>
+                </td>
+
+                <td class="camp-telf">
+                  <div class="form-floating">
+                    <input
+                      type="number"
+                      class="form-control border-dark"
+                      id="telefon"
+                      placeholder="Telefonnummer"
+                      required
+                    />
+                    <label for="floatingInput">Telefonnummer</label>
+                  </div>
+                </td>
+              </tr>
+              <!--!-----ADRESSE-->
+              <tr>
+                <td class="camp-strasse">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control border-dark"
+                      id="addresse"
+                      placeholder="Adresse"
+                      required
+                    />
+                    <label for="floatingInput">Adresse</label>
+                  </div>
+                </td>
+                <td class="camp-dort">
+                  <div class="plz-ort">
+                    <div class="form-floating w-30 me-2">
+                      <input
+                        type="number"
+                        class="form-control border-dark"
+                        id="plz"
+                        placeholder="PLZ"
+                        required
+                      />
+                      <label for="floatingInput">PLZ</label>
+                    </div>
+
+                    <div class="form-floating w-100">
+                      <input
+                        type="text"
+                        class="form-control border-dark"
+                        id="city"
+                        placeholder="Ort"
+                        required
+                      />
+                      <label for="floatingInput">Ort</label>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <!--!-----SPRACHE-->
+              <tr>
+                <td class="camp-sprache">
+                  <div class="cont-select">
+                    <label for="idiom"
+                      ><img
+                        class="img"
+                        src="../Media/Icons/translation.png"
+                        alt=""
+                    /></label>
+                    <select
+                      class="form-select border-dark"
+                      aria-label="Default select example"
+                      id="idiom"
+                      required
+                    >
+                      <option value="englisch">Englisch</option>
+                      <hr class="lineas" />
+                      <option value="spanisch">Spanisch</option>
+                      <hr class="lineas" />
+                      <option value="deutsch">Deutsch</option>
+                      <hr class="lineas" />
+                      <option value="italianisch">Italianisch</option>
+                      <hr class="lineas" />
+                      <option value="französich">Französich</option>
+                      <hr class="lineas" />
+                      <option selected disabled>Wählen Sie Ihre Sprache</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="camp-level">
+                  <div class="cont-select">
+                    <label for="level"
+                      ><img
+                        class="imgfix"
+                        src="../Media/Icons/Fitness_Outline.svg"
+                        alt=""
+                    /></label>
+                    <select
+                      class="form-select border-dark"
+                      aria-label="Default select example"
+                      id="level"
+                      required
+                    >
+                      <option value="intensiv">Intensiv</option>
+                      <hr class="lineas" />
+                      <option value="semintensiv">Semintensiv</option>
+                      <hr class="lineas" />
+                      <option selected disabled>Wählen Sie Ihre Option</option>
+                    </select>
+                  </div>
+                </td>
+              </tr>
+              <!--!-----PLANZEIT-->
+              <tr>
+                <td class="camp-planzeit">
+                  <div class="cont-select">
+                    <label for="start-date"
+                      ><img
+                        class="img"
+                        src="../Media/Icons/kalender.png"
+                        alt=""
+                    /></label>
+                    <select
+                      class="form-select border-dark"
+                      aria-label="Default select example"
+                      id="start-date"
+                      required
+                    >
+                      <option value="05/01/2023">05-01-2023</option>
+                      <hr class="lineas" />
+                      <option value="27/01/2023">27-01-2023</option>
+                      <hr class="lineas" />
+                      <option value="02/02/2023">02-02-2023</option>
+                      <hr class="lineas" />
+                      <option value="23/02/2023">23-02-2023</option>
+                      <hr class="lineas" />
+                      <option selected disabled>
+                        Wählen Sie Ihre Startdatum
+                      </option>
+                    </select>
+                  </div>
+                </td>
+                <td class="camp-modal">
+                  <div class="cont-select">
+                    <label for="modality"
+                      ><img
+                        class="img"
+                        src="../Media/Icons/classroom.png"
+                        alt=""
+                    /></label>
+                    <select
+                      class="form-select border-dark"
+                      aria-label="Default select example"
+                      id="modality"
+                      required
+                    >
+                      <option value="online">Online</option>
+                      <option value="classroom">CLassroom</option>
+                      <option selected disabled>Wählen Sie Ihre Option</option>
+                    </select>
+                  </div>
+                </td>
+              </tr>
+              <!--!-----BEMERKUNGEN-->
+              <tr>
+                <td colspan="2" class="camp-bemerkungen">
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control border-dark"
+                      placeholder="Leave a comment here"
+                      id="comment"
+                      style="height: 100px"
+                    ></textarea>
+                    <label for="comment">Comments</label>
+                  </div>
+                </td>
+              </tr>
+              <!--!-----VERSICHERUNG-->
+              <tr>
+                <td colspan="2" class="camp-versicherung">
+                  <div class="versicherung-box">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="versicherung"
+                        id="verJa"
+                      />
+                      <label class="form-check-label me-3" for="verJa">
+                        <b>Ja</b>
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="versicherung"
+                        id="verNein"
+                      />
+                      <label class="form-check-label me-2" for="verNein">
+                        <b>Nein</b>
+                      </label>
+                    </div>
+                    <label for="versicherung" class="text-check">
+                      <img
+                        class="img"
+                        src="../Media/Icons/pdf-file.png"
+                        alt="Versicherung.pdf"
+                      />
+                      <i><b>Anullation-Versicherung</b> abgeschlossen?.</i>
+                    </label>
+                  </div>
+                </td>
+              </tr>
+              <!--!-----BUTTON-->
+              <tr>
+                <td class="camp-AGB">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="AGB"
+                      id="AGB"
+                    />
+                    <label for="AGB" class="text-check">
+                      <i>Ich habe die <b>AGB</b> gelesen und akzeptiert.</i>
+                    </label>
+                  </div>
+                </td>
+                <td class="camp-btn">
+                  <div class="cont-btn">
+                    <button type="button" class="btn-verify btn btn-link">
+                      <img
+                        class="img"
+                        src="../Media/Icons/verificar.png"
+                        alt=""
+                        id="btn-verify"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal"
+                        onclick="showConfirm()"
+                      />
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-info w-100 text-light fw-bold"
+                      onclick="saveAnmeldung()"
+                    >
+                      SENDEN
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+        <!--!---------------------------------MODAL-->
+        <div id="modal">
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-modal="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header" id="modal-cont">
+                  <h1 class="modal-title fs-5 text-black">HALLO</h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                    onclick="clearVerifyForm()"
+                  ></button>
+                </div>
+
+                <div class="modal-body">
+                  <form id="modal-form">
+                    <table class="modal-form">
+                      <tr>
+                        <td>
+                          <label class="camp">Herr/Frau: </label>
+                        </td>
+                        <td>
+                          <input class="info" id="nameVerify" type="text" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="camp">E-Mail: </label>
+                        </td>
+                        <td>
+                          <input class="info" id="mailVerify" type="text" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="camp">Kurs: </label>
+                        </td>
+                        <td>
+                          <input class="info" id="kursVerify" type="text" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="camp">Strat-datum: </label>
+                        </td>
+                        <td>
+                          <input class="info" id="startVerify" type="text" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="camp">Comment: </label>
+                        </td>
+                        <td>
+                          <input class="info" id="commentVerify" type="text" />
+                        </td>
+                      </tr>
+                    </table>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cont-img">
+          <img src="../Media/Images/formular2.svg" alt="" />
+        </div>
+      </div>
+    </main>
+
+    <!--*------------------------------------------------------START BANNER-->
+    <section class="banner">
+      <div class="cont-banner">
+        <img src="../Media/Images/Club de Lectura.png" alt="" />
+      </div>
+    </section>
+
+    <!--*------------------------------------------------------START SECTION SUSCRIPTION-->
+    <section class="suscription">
+      <h3 for="sus-mail">WEITERE INFORMATIONEN</h3>
+      <div class="cont-adresse">
+        <form>
+          <input type="email" id="sus-mail" placeholder="email@example.com" />
+          <button>
+            <img src="../Media/Icons/send.png" alt="" />
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!--*------------------------------------------------------START FOOTER-->
+    <footer class="cont-footer">
+      <div class="social-media">
+        <a href="#"
+          ><img src="../Media/Icons/facebook-circle-logo-black.png" alt=""
+        /></a>
+        <a href="#"
+          ><img src="../Media/Icons/twitter-logo-black.png" alt=""
+        /></a>
+        <a href="#"><img src="../Media/Icons/gmail-logo-black.png" alt="" /></a>
+        <a href="#"><img src="../Media/Icons/github-black.png" alt="" /></a>
+        <a href="#"
+          ><img src="../Media/Icons/whatsapp-logo-black.png" alt=""
+        /></a>
+      </div>
+      <div class="footer-logo">
+        <img src="../Media/Images/Logo.png" alt="" />
+        <p>DorflindenStrasse 2, 8050 Zürich</p>
+      </div>
+      <div class="footer-info">
+        <div class="legal">
+          <p><i>Legal information</i></p>
+        </div>
+        <div class="terms">
+          <p><i>Terms & Conditions</i></p>
+        </div>
+      </div>
+    </footer>
+
+    <!--!JAVASCRIPT (EXTERNAL FILE & BOOTSTRAP)-->
+    <script src="../JS/formular.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js
+    "></script>
+  </body>
+</html>

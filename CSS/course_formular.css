@@ -1,0 +1,461 @@
+/**----------------------------------------------NAVBAR*/
+.nav {
+  width: 100%;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo {
+  width: 100px;
+  margin-left: 10px;
+}
+#navbarNavDropdown {
+  justify-content: end;
+  margin-right: 4rem;
+}
+.lineas {
+  width: 90%;
+  margin: auto;
+}
+#navbarNavDropdown img {
+  width: 25px;
+  float: right;
+}
+.notify {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+#count {
+  background-color: red;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  margin: auto;
+  visibility: hidden;
+}
+#nummer {
+  color: white;
+  font-size: 14px;
+}
+
+/**----------------------------------------------MAIN FORM*/
+.main {
+  padding-top: 6rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main h2 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 2rem;
+}
+.cont-main {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+}
+
+/*!-----------------------------------FORMULAR*/
+.cont-form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#form {
+  width: 90%;
+}
+.tbl-form {
+  margin: auto;
+  width: 100%;
+}
+.tbl-form td {
+  margin-bottom: 8px;
+  margin-right: 5px;
+}
+.tbl-form tr {
+  display: flex;
+}
+/*!-----------------------------------CAMPS FORMULAR*/
+.camp-name {
+  width: 50%;
+}
+.camp-lastName {
+  width: 50%;
+}
+.camp-gen {
+  width: 30%;
+}
+.camp-mail {
+  width: 70%;
+}
+.camp-geburtstag {
+  width: 50%;
+}
+#date {
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+.camp-telf {
+  width: 50%;
+}
+.camp-strasse {
+  width: 50%;
+}
+.camp-dort {
+  width: 50%;
+}
+.plz-ort {
+  width: 100%;
+  display: flex;
+}
+
+.cont-select {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+#idiom,
+#level,
+#start-date,
+#modality {
+  margin-left: 1rem;
+  height: 50px;
+  width: 100%;
+}
+.camp-sprache {
+  width: 50%;
+}
+.camp-level {
+  width: 50%;
+}
+.camp-planzeit {
+  width: 50%;
+}
+.camp-modal {
+  width: 50%;
+}
+.camp-bemerkungen {
+  width: 100%;
+}
+.camp-versicherung {
+  width: 100%;
+}
+.camp-AGB {
+  width: 70%;
+}
+.camp-btn {
+  width: 30%;
+}
+.cont-btn {
+  display: flex;
+  font-size: 15px;
+}
+#btn-verify {
+  visibility: hidden;
+}
+
+.gen-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.img {
+  width: 30px;
+}
+.imgfix {
+  width: 70px;
+}
+.versicherung-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.text-check {
+  font-size: 18px;
+}
+.text-check b {
+  color: #68e1fd;
+  text-decoration: underline 3px;
+}
+
+/*!-----------------------------------IMAGE*/
+.cont-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cont-img img {
+  width: 80%;
+}
+
+/*!-----------------------------------MODAL FORMULAR VERIFY*/
+.modal-body {
+  background-color: rgba(0, 255, 255, 0);
+}
+#modal-form {
+  background-image: url("../Media/Images/tarea.png");
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 1rem;
+  width: 100%;
+}
+.modal-form {
+  width: 100%;
+  background-color: rgba(245, 245, 245, 0.603);
+}
+.modal-form td {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.camp {
+  font-size: 18px;
+  font-weight: bold;
+}
+.info {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.719);
+  border-radius: 10px;
+  text-align: right;
+  font-style: italic;
+  font-size: 15px;
+  width: 80%;
+}
+
+/**----------------------------------------------SECTION BANNER*/
+.banner {
+  padding-top: 2rem;
+  width: 100%;
+}
+.cont-banner {
+  margin: auto;
+  width: 90%;
+  height: 350px;
+}
+.cont-banner img {
+  width: 100%;
+  height: 100%;
+}
+/**----------------------------------------------SECTION SUSCRIPTION*/
+.suscription {
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+}
+.suscription h3 {
+  font-size: 50px;
+  margin-bottom: 2rem;
+}
+.cont-adresse {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cont-adresse form {
+  width: 35%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.cont-adresse input {
+  width: 90%;
+  height: 100%;
+  border: 1px solid black;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.cont-adresse button {
+  background-color: black;
+  width: 10%;
+  height: 100%;
+  border: 1px solid black;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.cont-adresse button img {
+  height: 100%;
+  width: 100%;
+}
+
+/**----------------------------------------------FOOTER*/
+.cont-footer {
+  background-color: #55b9cf;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+.social-media {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+.social-media img {
+  width: 50px;
+}
+.footer-logo {
+  width: 20%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.footer-logo img {
+  width: 150px;
+  margin-bottom: 1rem;
+}
+.footer-logo p {
+  font-size: 20px;
+}
+.footer-info {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.legal {
+  padding-right: 1rem;
+  border-right: 2px solid black;
+}
+.terms {
+  padding-left: 1rem;
+}
+
+/*?----------------------------------------------MEDIA QUERIES 1500 PX*/
+@media (max-width: 1500px) {
+  .nav {
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  /**-----------------------------------SECTION SUSCRIPTION*/
+  .cont-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cont-img img {
+    width: 80%;
+  }
+}
+
+/*?----------------------------------------------MEDIA QUERIES 1000 PX*/
+@media (max-width: 1000px) {
+  .cont-form {
+    width: 70%;
+  }
+  .cont-img {
+    margin: auto;
+    width: 30%;
+  }
+}
+
+/*?----------------------------------------------MEDIA QUERIES 800 PX*/
+@media (max-width: 800px) {
+  .nav {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+  #logo {
+    width: 10%;
+  }
+  .logo {
+    width: 70px;
+    margin-left: 10px;
+  }
+  .cont-banner {
+    height: 250px;
+  }
+  /**-----------------------------------SECTION SUSCRIPTION*/
+  .suscription h3 {
+    font-size: 35px;
+  }
+  .cont-adresse form {
+    width: 100%;
+  }
+  .cont-adresse input {
+    width: 85%;
+  }
+  .cont-adresse button {
+    width: 15%;
+  }
+
+  /**-----------------------------------FOOTER*/
+  .cont-footer {
+    padding-bottom: 1rem;
+  }
+  .social-media img {
+    width: 40px;
+  }
+  .footer-logo {
+    width: 100%;
+  }
+  .footer-logo p {
+    font-size: 15px;
+  }
+  .footer-info {
+    width: 100%;
+  }
+}
+/*?----------------------------------------------MEDIA QUERIES 300 PX*/
+@media (max-width: 800px) {
+  .cont-main {
+    width: 98%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: auto;
+  }
+  .cont-form {
+    width: 100%;
+  }
+  .cont-img {
+    margin: auto;
+    width: 60%;
+    margin: 1rem;
+  }
+  .text-check i b {
+    font-size: 12px;
+    color: #68e1fd;
+    text-decoration: underline 3px;
+  }
+  .text-check i {
+    font-size: 12px;
+  }
+  .camp-AGB {
+    width: 50%;
+  }
+  .cont-btn button {
+    font-size: 15px;
+  }
+  .cont-banner {
+    height: 100px;
+  }
+}

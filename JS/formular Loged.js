@@ -79,14 +79,5 @@ clearVerifyForm = () => {
   modalForm.reset();
 };
 
-notifyCourse = () => {
-  if (countNummer > 1) {
-    count.style.visibility = "visible";
-    nummer.textContent = countNummer - 1;
-    btnVerify.style.visibility = "visible";
-  }
-};
-
-localStorage.setItem("DB_ONLINE_ANMELDUNG", JSON.stringify(Online_Anmeldungen));
+//localStorage.setItem("DB_ONLINE_ANMELDUNG", JSON.stringify(Online_Anmeldungen));
 Online_Anmeldungen = JSON.parse(localStorage.getItem("DB_ONLINE_ANMELDUNG"));
-notifyCourse();

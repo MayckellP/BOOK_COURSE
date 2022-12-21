@@ -10,6 +10,11 @@
     "
     />
     <link rel="stylesheet" href="CSS/index.css" />
+    <link
+      rel="shortcut icon"
+      href="Media/Images/logo.png"
+      type="image/x-icon"
+    />
     <title>ZH-ACADEMIY | Home</title>
   </head>
   <body>
@@ -17,7 +22,7 @@
     <div class="p-0 fixed-top">
       <nav class="navbar navbar-expand-lg bg-light container-fluid p-0">
         <div class="nav container-fluid">
-          <a class="navbar-brand" href="#" id="logo">
+          <a class="navbar-brand" href="index.html" id="logo">
             <img src="Media/Images/Logo.png" alt="" class="logo" />
           </a>
 
@@ -35,13 +40,15 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="Pages/ContactPage.html">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
+                <a class="nav-link" href="Pages/AboutPage.html">About us</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -55,7 +62,7 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item" href="Pages/Course_Formular.html"
                       >Englisch
                       <img
                         src="Media/Icons/vereinigtes-konigreich.png"
@@ -65,55 +72,29 @@
                   </li>
                   <hr class="lineas" />
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item" href="Pages/Course_Formular.html"
                       >Spanisch <img src="Media/Icons/spanien.png"
                     /></a>
                   </li>
                   <hr class="lineas" />
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item" href="Pages/Course_Formular.html"
                       >Deutsch
                       <img src="Media/Icons/deutsche-flagge.png" alt="" />
                     </a>
                   </li>
                   <hr class="lineas" />
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item" href="Pages/Course_Formular.html"
                       >Italienisch
                       <img src="Media/Icons/italy.png" alt="" />
                     </a>
                   </li>
                   <hr class="lineas" />
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item" href="Pages/Course_Formular.html"
                       >Französisch
                       <img src="Media/Icons/frankreich.png" alt="" />
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Modalities
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Classroom
-                      <img src="Media/Icons/classroom.png" alt="" />
-                    </a>
-                  </li>
-                  <hr class="lineas" />
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Online
-                      <img src="Media/Icons/videoconference.png" alt="" />
                     </a>
                   </li>
                 </ul>
@@ -130,19 +111,29 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item" href="Pages/LoginPage.html"
                       >Login
                       <img src="Media/Icons/tur.png" alt="" />
                     </a>
                   </li>
                   <hr class="lineas" />
                   <li>
-                    <a class="dropdown-item" href="#"
+                    <a class="dropdown-item" href="Pages/RegisterPage.html"
                       >Sign up
                       <img src="Media/Icons/register.png" alt="" />
                     </a>
                   </li>
                 </ul>
+              </li>
+              <li class="nav-item">
+                <div class="notify">
+                  <div id="count">
+                    <p id="nummer">0</p>
+                  </div>
+                  <a class="nav-link" href="Pages/ReservationPage.html">
+                    <img src="Media/Icons/aprender-en-linea.png" alt="" />
+                  </a>
+                </div>
               </li>
             </ul>
           </div>
@@ -156,12 +147,14 @@
       <div class="cont-text">
         <h1>ZH-ACADEMY</h1>
         <h2>Aprender nunca fue tan facil</h2>
-        <button
-          type="button"
-          class="btn btn-success w-50 fw-bold fs-5 mt-3 rounded-5"
-        >
-          Reservar Curso
-        </button>
+        <a href="Pages/Course_Formular.html" class="w-75 text-center">
+          <button
+            type="button"
+            class="btn btn-success w-50 fw-bold fs-5 mt-3 rounded-5"
+          >
+            Reservar Curso
+          </button>
+        </a>
       </div>
       <!--!--------------------------CAROUSEL-->
       <div class="cont-carousel">
@@ -208,7 +201,7 @@
       <h2 class="tl-courses">MODALITIES</h2>
       <div class="courses-card">
         <!--!-------------------------- COURSE ONLINE-->
-        <a href="#" class="online">
+        <a href="Pages/MO_Formular.html" class="online">
           <div class="cont-img-online">
             <img src="Media/Images/Online.svg" alt="" />
           </div>
@@ -218,7 +211,7 @@
         </a>
 
         <!--!-------------------------- COURSE CLASSROOM-->
-        <a href="#" class="classroom">
+        <a href="Pages/MO_Formular.html" class="classroom">
           <div class="cont-img-classroom">
             <img src="Media/Images/Presencial.svg" alt="" />
           </div>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css
+    "
+    />
+    <link rel="stylesheet" href="../CSS/loginPage.css" />
+    <link
+      rel="shortcut icon"
+      href="Media/Images/logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="../Media/Images/logo.png"
+      type="image/x-icon"
+    />
+    <title>ZH-ACADEMIY | Login</title>
+  </head>
+  <body>
+    <!--*--------------------------------------------------------------NAVBAR-->
+    <div class="p-0 fixed-top">
+      <nav class="navbar navbar-expand-lg bg-light container-fluid p-0">
+        <div class="nav container-fluid">
+          <a class="navbar-brand" href="../index.html" id="logo">
+            <img src="../Media/Images/Logo.png" alt="" class="logo" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ContactPage.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="AboutPage.html">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Courses
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="Course_Formular.html"
+                      >Englisch
+                      <img
+                        src="../Media/Icons/vereinigtes-konigreich.png"
+                        alt=""
+                      />
+                    </a>
+                  </li>
+                  <hr class="lineas" />
+                  <li>
+                    <a class="dropdown-item" href="Course_Formular.html"
+                      >Spanisch <img src="../Media/Icons/spanien.png"
+                    /></a>
+                  </li>
+                  <hr class="lineas" />
+                  <li>
+                    <a class="dropdown-item" href="Course_Formular.html"
+                      >Deutsch
+                      <img src="../Media/Icons/deutsche-flagge.png" alt="" />
+                    </a>
+                  </li>
+                  <hr class="lineas" />
+                  <li>
+                    <a class="dropdown-item" href="Course_Formular.html"
+                      >Italienisch
+                      <img src="../Media/Icons/italy.png" alt="" />
+                    </a>
+                  </li>
+                  <hr class="lineas" />
+                  <li>
+                    <a class="dropdown-item" href="Course_Formular.html"
+                      >Französisch
+                      <img src="../Media/Icons/frankreich.png" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Account
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="LoginPage.html"
+                      >Login
+                      <img src="../Media/Icons/tur.png" alt="" />
+                    </a>
+                  </li>
+                  <hr class="lineas" />
+                  <li>
+                    <a class="dropdown-item" href="RegisterPage.html"
+                      >Sign up
+                      <img src="../Media/Icons/register.png" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--*------------------------------------------------------START SECTION LOGIN-->
+    <section class="login">
+      <img class="img" src="../Media/Images/grupo.png" alt="" />
+      <div class="cont-form">
+        <form id="form" method="post">
+          <h2>Füllen Sie das Formular aus</h2>
+          <!--*                               E-Mail-->
+          <div class="form-floating mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="mail"
+              placeholder="email@example.com"
+              required
+            />
+            <label for="vld-email">E-Mail:</label>
+          </div>
+          <!--*                               Passwort-->
+          <div class="form-floating mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Ihre Passwort hier"
+              required
+            />
+            <label for="password">Passwort</label>
+          </div>
+          <!--*                               Buttom-->
+          <input
+            class="btn btn-primary mb-3"
+            type="button"
+            value="Validate"
+            style="background-color: #6c63ff"
+            id="btn-val"
+            onclick="validateAccount();"
+          />
+        </form>
+      </div>
+    </section>
+
+    <!--*------------------------------------------------------START FOOTER-->
+    <footer class="cont-footer">
+      <div class="social-media">
+        <a href="#"
+          ><img src="../Media/Icons/facebook-circle-logo-black.png" alt=""
+        /></a>
+        <a href="#"
+          ><img src="../Media/Icons/twitter-logo-black.png" alt=""
+        /></a>
+        <a href="#"><img src="../Media/Icons/gmail-logo-black.png" alt="" /></a>
+        <a href="#"><img src="../Media/Icons/github-black.png" alt="" /></a>
+        <a href="#"
+          ><img src="../Media/Icons/whatsapp-logo-black.png" alt=""
+        /></a>
+      </div>
+      <div class="footer-logo">
+        <img src="../Media/Images/Logo.png" alt="" />
+        <p>DorflindenStrasse 2, 8050 Zürich</p>
+      </div>
+      <div class="footer-info">
+        <div class="legal">
+          <p><i>Legal information</i></p>
+        </div>
+        <div class="terms">
+          <p><i>Terms & Conditions</i></p>
+        </div>
+      </div>
+    </footer>
+
+    <!--!JAVASCRIPT (EXTERNAL FILE & BOOTSTRAP)-->
+    <script src="../JS/loginPage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js
+    "></script>
+  </body>
+</html>

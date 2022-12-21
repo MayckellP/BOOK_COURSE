@@ -22,59 +22,79 @@
   width: 25px;
   float: right;
 }
-
-/**----------------------------------------------SECTION LOGIN*/
-.login {
+.notify {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 90vh;
-  background-image: url("../Media/Images/backgroundLog.png");
-  background-size: cover;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  padding-top: 0rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
 }
-/*!-------------------------------------CONT LINK*/
-.cont-form {
-  width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.img {
-  width: 200px;
-  margin-bottom: 1rem;
-}
-
-#form {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  float: right;
-  padding: 1rem;
-  border: 1px solid rgb(180, 177, 177);
-  border-radius: 20px;
-}
-
-#form h2 {
+#count {
+  background-color: red;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
   text-align: center;
-  margin-bottom: 25px;
-}
-#form a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
-#btn-log {
+  margin: auto;
   visibility: hidden;
+}
+#nummer {
+  color: white;
+  font-size: 14px;
+}
+
+/**----------------------------------------------SECTION SUSCRIPTION*/
+.suscription {
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+}
+.suscription h3 {
+  font-size: 50px;
+  margin-bottom: 2rem;
+}
+.cont-adresse {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cont-adresse form {
+  width: 35%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.cont-adresse input {
+  width: 90%;
+  height: 100%;
+  border: 1px solid black;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.cont-adresse button {
+  background-color: black;
+  width: 10%;
+  height: 100%;
+  border: 1px solid black;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.cont-adresse button img {
+  height: 100%;
+  width: 100%;
 }
 
 /**----------------------------------------------FOOTER*/
 .cont-footer {
-  background-color: #55b9cf;
+  background-color: #dddddd;
   width: 100%;
   display: flex;
   flex-direction: column;
