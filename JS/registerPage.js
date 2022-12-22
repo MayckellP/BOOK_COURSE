@@ -48,7 +48,7 @@ deleteUser = () => {};
 newRegister = () => {
   if (
     !namee.value ||
-    !vorname ||
+    !vorname.value ||
     !mail.value ||
     !vldMail.value ||
     !age.value ||

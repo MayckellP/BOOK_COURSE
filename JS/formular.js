@@ -38,45 +38,67 @@ generateID = () => {
 };
 
 saveAnmeldung = () => {
-  let userAnmeldung = {
-    name: `${naame.value} ${lastName.value}`,
-    mail: mail.value,
-    birthday: birthday.value,
-    telefon: telefon.value,
-    addresse: `${addresse.value}, ${plz.value} ${city.value}`,
-    language: idiom.value,
-    level: level.value,
-    start: starDate.value,
-    modality: modality.value,
-    comment: comment.value,
-    reservation: [generateID()],
+  if (
+    !naame.value ||
+    !lastName.value ||
+    !mail.value ||
+    !birthday.value ||
+    !telefon.value ||
+    !addresse.value ||
+    !plz.value ||
+    !city.value ||
+    !language.value ||
+    !level.value ||
+    !starDate.value ||
+    !modality.value
+  ) {
+    alert("Müssen Sie das Formular asufüllen!");
+  } else {
+    let userAnmeldung = {
+      name: `${naame.value} ${lastName.value}`,
+      mail: mail.value,
+      birthday: birthday.value,
+      telefon: telefon.value,
+      addresse: `${addresse.value}, ${plz.value} ${city.value}`,
+      language: idiom.value,
+      level: level.value,
+      start: starDate.value,
+      modality: modality.value,
+      comment: comment.value,
+      reservation: [generateID()],
+    };
+    Online_Anmeldungen.push(userAnmeldung);
+    localStorage.setItem(
+      "DB_ONLINE_ANMELDUNG",
+      JSON.stringify(Online_Anmeldungen)
+    );
+    Online_Anmeldungen = JSON.parse(
+      localStorage.getItem("DB_ONLINE_ANMELDUNG")
+    );
+    console.log(Online_Anmeldungen);
+    console.log(JSON.parse(localStorage.getItem("DB_ONLINE_ANMELDUNG")));
+    countNummer = JSON.parse(
+      localStorage.getItem("DB_ONLINE_ANMELDUNG")
+    ).length;
+    formular.reset();
+    notifyCourse();
+  }
+
+  showConfirm = () => {
+    let kurs = `${Online_Anmeldungen[0].language} ${Online_Anmeldungen[0].level} ${Online_Anmeldungen[0].modality}`;
+
+    document.getElementById("nameVerify").value = Online_Anmeldungen[0].name;
+    document.getElementById("mailVerify").value =
+      Online_Anmeldungen[0].addresse;
+    document.getElementById("kursVerify").value = kurs;
+    document.getElementById("startVerify").value = Online_Anmeldungen[0].start;
+    document.getElementById("commentVerify").value =
+      Online_Anmeldungen[0].comment;
   };
-  Online_Anmeldungen.push(userAnmeldung);
-  localStorage.setItem(
-    "DB_ONLINE_ANMELDUNG",
-    JSON.stringify(Online_Anmeldungen)
-  );
-  Online_Anmeldungen = JSON.parse(localStorage.getItem("DB_ONLINE_ANMELDUNG"));
-  console.log(Online_Anmeldungen);
-  console.log(JSON.parse(localStorage.getItem("DB_ONLINE_ANMELDUNG")));
-  countNummer = JSON.parse(localStorage.getItem("DB_ONLINE_ANMELDUNG")).length;
-  formular.reset();
-  notifyCourse();
-};
 
-showConfirm = () => {
-  let kurs = `${Online_Anmeldungen[0].language} ${Online_Anmeldungen[0].level} ${Online_Anmeldungen[0].modality}`;
-
-  document.getElementById("nameVerify").value = Online_Anmeldungen[0].name;
-  document.getElementById("mailVerify").value = Online_Anmeldungen[0].addresse;
-  document.getElementById("kursVerify").value = kurs;
-  document.getElementById("startVerify").value = Online_Anmeldungen[0].start;
-  document.getElementById("commentVerify").value =
-    Online_Anmeldungen[0].comment;
-};
-
-clearVerifyForm = () => {
-  modalForm.reset();
+  clearVerifyForm = () => {
+    modalForm.reset();
+  };
 };
 
 notifyCourse = () => {
