@@ -224,6 +224,9 @@
   .cont-log p {
     font-size: 12px;
   }
+  .cont-log button {
+    font-size: 10px;
+  }
   .table {
     font-size: 10px;
   }

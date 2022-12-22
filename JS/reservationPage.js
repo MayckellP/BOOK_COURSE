@@ -4,7 +4,8 @@ let countID = 1;
 let kurs = ` `;
 
 loginPage = () => {
-  window.location.href = "LoginPage.html";
+  const url = "https://mayckellp.github.io/BOOK_COURSE/Pages/LoginPage.html";
+  location.assign(url);
 };
 
 for (let i = 1; i < registerTable.length; i++) {

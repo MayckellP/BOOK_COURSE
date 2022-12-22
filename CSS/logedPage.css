@@ -135,8 +135,8 @@
   height: 300px;
 }
 .cont-video img {
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 #btn2 {
   padding: 1rem;
@@ -248,8 +248,8 @@
   }
 }
 
-/*?----------------------------------------------MEDIA QUERIES 600 PX*/
-@media (max-width: 800px) {
+/*?----------------------------------------------MEDIA QUERIES 1000 PX*/
+@media (max-width: 1000px) {
   .nav {
     padding-left: 1rem;
     padding-bottom: 1rem;
@@ -260,6 +260,15 @@
   .logo {
     width: 70px;
     margin-left: 10px;
+  }
+  .cont-sideBar {
+    width: 30%;
+  }
+  .cont-report {
+    width: 68%;
+  }
+  .cont-video img {
+    height: 50%;
   }
 
   /**-----------------------------------FOOTER*/
@@ -277,5 +286,70 @@
   }
   .footer-info {
     width: 100%;
+  }
+}
+/*?----------------------------------------------MEDIA QUERIES 600 PX*/
+@media (max-width: 1000px) {
+  .nav {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+  #logo {
+    width: 10%;
+  }
+  .logo {
+    width: 70px;
+    margin-left: 10px;
+  }
+  .cont-course {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .cont-sideBar {
+    width: 95%;
+  }
+  .cont-report {
+    width: 95%;
+  }
+  .title-report {
+    font-size: 20px;
+  }
+  .info-global1,
+  .info-global2,
+  .info-global3 {
+    flex-direction: column;
+  }
+  .cont-info {
+    padding: 0;
+    padding-left: 1rem;
+  }
+  .info-kurs1,
+  #info-kurs {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  #info-tl,
+  #tl-info {
+    font-size: 15px;
+    margin: 0;
+  }
+  #info-modality {
+    margin: 0;
+    margin-top: 1rem;
+  }
+  .graphic {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .cont-btn {
+    width: 100%;
+  }
+  .cont-btn button {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
   }
 }

@@ -353,18 +353,30 @@
   }
 
   /**-----------------------------------SECTION SUSCRIPTION*/
-  .cont-adresse form {
-    width: 60%;
+  .cont-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .cont-adresse input {
-    width: 88%;
-  }
-  .cont-adresse button {
-    width: 12%;
+  .cont-img img {
+    width: 80%;
   }
 }
 
-/*?----------------------------------------------MEDIA QUERIES 600 PX*/
+/*?----------------------------------------------MEDIA QUERIES 1000 PX*/
+@media (max-width: 1000px) {
+  .cont-form {
+    width: 70%;
+  }
+  .cont-img {
+    margin: auto;
+    width: 30%;
+  }
+}
+
+/*?----------------------------------------------MEDIA QUERIES 800 PX*/
 @media (max-width: 800px) {
   .nav {
     padding-left: 1rem;
@@ -377,7 +389,9 @@
     width: 70px;
     margin-left: 10px;
   }
-
+  .cont-banner {
+    height: 250px;
+  }
   /**-----------------------------------SECTION SUSCRIPTION*/
   .suscription h3 {
     font-size: 35px;
@@ -407,5 +421,48 @@
   }
   .footer-info {
     width: 100%;
+  }
+}
+/*?----------------------------------------------MEDIA QUERIES 300 PX*/
+@media (max-width: 800px) {
+  .cont-main {
+    width: 98%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: auto;
+  }
+  .cont-form {
+    width: 100%;
+  }
+  .cont-img {
+    margin: auto;
+    width: 60%;
+    margin: 1rem;
+  }
+  .text-check i b {
+    font-size: 12px;
+    color: #68e1fd;
+    text-decoration: underline 3px;
+  }
+  .text-check i {
+    font-size: 12px;
+  }
+  .camp-AGB {
+    width: 50%;
+  }
+  .camp-btn {
+    width: 100%;
+    margin: auto;
+  }
+  .cont-btn {
+    width: 100%;
+  }
+  .cont-btn button {
+    width: 100%;
+    font-size: 15px;
+  }
+  .cont-banner {
+    height: 100px;
   }
 }

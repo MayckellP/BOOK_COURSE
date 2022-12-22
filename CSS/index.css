@@ -408,6 +408,12 @@
   .cont-text h2 {
     font-size: 15px;
   }
+  .cont-text a {
+    width: 100%;
+  }
+  .cont-text button {
+    width: 100%;
+  }
 
   /*!--------------------------CONTAINER CAROUSEL*/
   .cont-carousel {
