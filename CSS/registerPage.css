@@ -32,7 +32,7 @@ section {
   margin-top: 5rem;
 }
 .cont-form {
-  width: 30%;
+  width: 35%;
   margin: auto;
 }
 
@@ -57,11 +57,10 @@ section {
 }
 /**---------------------------------------CONT RECHT*/
 .cont-bg {
-  width: 70%;
-  height: 100vh;
+  width: 65%;
+  height: 80vh;
   background-image: url("../Media/Images/fondo-Register.png");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   text-align: center;
 }
@@ -148,7 +147,7 @@ section {
 }
 
 /*?----------------------------------------------MEDIA QUERIES 600 PX*/
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .nav {
     padding-left: 1rem;
     padding-bottom: 1rem;

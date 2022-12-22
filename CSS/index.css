@@ -397,6 +397,9 @@
   .cont-main {
     flex-direction: column-reverse;
   }
+  .bg-gradient {
+    width: 100%;
+  }
   .cont-text {
     width: 100%;
     padding-bottom: 2rem;

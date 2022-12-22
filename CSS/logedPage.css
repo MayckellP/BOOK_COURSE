@@ -289,7 +289,7 @@
   }
 }
 /*?----------------------------------------------MEDIA QUERIES 600 PX*/
-@media (max-width: 1000px) {
+@media (max-width: 400px) {
   .nav {
     padding-left: 1rem;
     padding-bottom: 1rem;
@@ -351,5 +351,8 @@
     font-size: 12px;
     font-weight: bold;
     color: white;
+  }
+  .cont-video img {
+    height: 70%;
   }
 }
