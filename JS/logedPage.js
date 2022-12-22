@@ -35,6 +35,8 @@ showReport = () => {
       image = "../Media/Images/IT-loged.jpg";
     } else if (User_Anmeldungen[i].language === "französich") {
       image = "../Media/Images/FR-loged.jpg";
+    } else if (User_Anmeldungen[i].language === "spanisch") {
+      image = "../Media/Images/ES-loged.jpg";
     }
     if (User_Anmeldungen[i].reservation === undefined) {
       User_Anmeldungen[i].reservation = " ";
